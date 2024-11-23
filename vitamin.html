@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
+    <title>Vitamin</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -311,7 +311,7 @@
             </div>
         
             <div  class="col-md-1 offset-3 d-flex flex-wrap align-items-center justify-content-center justify-content-lg-end">
-                <select id="languageSelector" lang="th" class="text-black p-2 rounded">
+                <select id="languageSelector" lang="" class="text-black p-2 rounded" onchange="changeLanguage()">
                     <option value="th">ภาษาไทย</option>
                     <option value="en">English</option>
                 </select>
@@ -352,12 +352,14 @@
                 สีชมพู Mauritius Flower​ (กลิ่นหอมจากดอกมอริเชียส) กลิ่นวิตามินทั้งหมดของเราปราศจากสารที่ก่อให้เกิดภูมิแพ้ ช่วยให้คุณได้สัมผัสกลิ่นหอมแบบไร้กังวล​<br><br>
             </p>
             <p lang="th" class="text-left font-semibold " style="font-size: 16px;"> [ Jeju Fresh Green กลิ่นสดชื่นธรรมชาติจากเกาะเชจู ] </p>
-            <p lang="th" class="text-left" style="font-size: 16px;">กลิ่นหอมของ Jeju Fresh Green มอบความสดชื่นบริสุทธิ์จากธรรมชาติ ผสานกลิ่นของทุ่งหญ้าเขียวขจีและลมเย็น สัมผัสบรรยากาศที่เงียบสงบของเกาะเชจู ให้ความรู้สึกสดชื่นและเงียบสงบเหมือนได้พักผ่อนกลางธรรมชาติ​<br><br>
+            <p lang="th" class="text-left" style="font-size: 16px;">ภาพบรรยากาศที่มีชีวิตชีวาของป่าเล็กๆบนเกาะเชจู ซึ่งเป็นเกาะที่อยู่ทางตอนใต้สุดของเกาหลีใต้ ที่ต้องเผชิญกับลมทะเลที่เย็นพัดผ่าน กลิ่นหอมของ Jeju Fresh Green มอบความสดชื่นบริสุทธิ์จากธรรมชาติ ผสานกลิ่นของทุ่งหญ้าเขียวขจีและลมเย็น สัมผัสบรรยากาศที่เงียบสงบของเกาะเชจู ให้ความรู้สึกสดชื่นและเงียบสงบเหมือนได้พักผ่อนกลางธรรมชาติ​<br>
+                Top note: เปลือกส้มแมนดาริน, ใบต้นสน ​<br> Middle note: ต้นสนไซเพรส, สนจูนิเปอร์ ​<br> Base note:
+                ไม้ซีดาร์, กลิ่นหอมของท้องทะเล​<br><br>
             </p>
             <p lang="th" class="text-left font-semibold " style="font-size: 16px;"> [ Mauritius Flower กลิ่นหอมจากมอริเชียส ] </p>
             <p lang="th" class="text-left" style="font-size: 16px;">ได้รับแรงบันดาลใจจากทิวทัศน์ของประเทศมอริเชียส เกาะเขตร้อนที่ตั้งอยู่ทางตะวันตกเฉียงใต้
                 มหาสมุทรอินเดีย รวมทั้งดอกไม้และผลไม้ ตลอดจนดินเจ็ดสีอันเป็นเอกลักษณ์
-                ที่เกิดจากการระเบิดของภูเขาไฟ​<br>Top note : แอปริคอต, มะพร้าว ​<br> Middle note : การ์ดิเนีย, กระดังงา ​<br> Base note : ไม้ซีดาร์, วานิลลา ​<br>​<br></p>
+                ที่เกิดจากการระเบิดของภูเขาไฟ​<br>Top note: แอปริคอต, มะพร้าว ​<br> Middle note: การ์ดิเนีย, กระดังงา ​<br> Base note: ไม้ซีดาร์, วานิลลา ​<br>​<br></p>
             <p lang="th" class="text-left font-semibold " style="font-size: 16px;"> [ Fragrance Free ไม่มีกลิ่น ปราศจากน้ำหอม ] </p>
             <p lang="th" class="text-left" style="font-size: 16px;">ปราศจากน้ำหอม ปราศจากสีสังเคราะห์ ที่ทำให้เกิดการระคายเคืองต่อผิว เมื่อไม่มีอโรมาเธอราพี <br>จะเน้นไปที่การขจัดคลอรีนและคลอรามีนที่ตกค้างออกเพียงอย่างเดียว
                  แนะนำสำหรับสตรีมีครรภ์ เด็ก และผู้ที่ไวต่อกลิ่นหอมหรือผู้ที่แพ้น้ำหอม  ​<br>​<br></p>
@@ -504,6 +506,17 @@
             navbar.classList.remove('scrolled');
         }
     });
+
+    function changeLanguage() {
+        var selectedValue = document.getElementById("languageSelector").value;
+        
+        // เปลี่ยนหน้าไปตามที่เลือก
+        if (selectedValue === "en") {
+            window.location.href = "indexEng.html";  // เปลี่ยนไปหน้าอังกฤษ
+        } else if (selectedValue === "th") {
+            window.location.href = "index.html";     // เปลี่ยนไปหน้าภาษาไทย
+        }
+    }
 </script>
 <script>
         function changeImage(imageSrc) {

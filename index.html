@@ -30,7 +30,7 @@
             </div>
         
             <div  class="col-md-1 offset-3 d-flex flex-wrap align-items-center justify-content-center justify-content-lg-end">
-                <select id="languageSelector" lang="th" class="text-black p-2 rounded">
+                <select id="languageSelector" lang="" class="text-black p-2 rounded" onchange="changeLanguage()">
                     <option value="th">ภาษาไทย</option>
                     <option value="en">English</option>
                 </select>
@@ -247,6 +247,16 @@
         // Implement actual language change logic here
     });
     
+    function changeLanguage() {
+        var selectedValue = document.getElementById("languageSelector").value;
+        
+        // เปลี่ยนหน้าไปตามที่เลือก
+        if (selectedValue === "en") {
+            window.location.href = "indexEng.html";  // เปลี่ยนไปหน้าอังกฤษ
+        } else if (selectedValue === "th") {
+            window.location.href = "index.html";     // เปลี่ยนไปหน้าภาษาไทย
+        }
+    }
 </script>
 
 <script>
@@ -262,4 +272,5 @@
         }
     });
 </script>
+
 
